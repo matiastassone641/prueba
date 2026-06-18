@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Cobros - Bares y Restaurantes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        .feature-list {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            color: #666;
+        }
+        .feature-icon {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 App de Cobros</h1>
+        <p class="subtitle">Pagos parciales para bares y restaurantes</p>
+        
+        <button class="button" onclick="alert('Próximamente: Escanear QR')">📱 Escanear QR</button>
+        <button class="button" onclick="alert('Próximamente: Acceso de Admin')">👨‍💼 Administrador</button>
+        
+        <div class="feature-list">
+            <h3 style="color: #333; margin-bottom: 15px;">Características</h3>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Pagos parciales rápidos</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Menú interactivo</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Múltiples locales</span>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <span>Acceso mediante QR</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
